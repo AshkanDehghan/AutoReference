@@ -20,4 +20,7 @@ Simple Auto Reference Objects In Unity Without Drag And Drop OR Find .
 - obj.GetIn("objectname"); InputField
   
 - .....
-  
+
+## Note
+- Object Must Be Active
+- If You Want Deactive object Select Hidden In RegiserObject Component 

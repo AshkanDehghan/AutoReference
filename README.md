@@ -23,4 +23,4 @@ Simple Auto Reference Objects In Unity Without Drag And Drop OR Find .
 
 ## Note
 - Object Must Be Active
-- If You Want Deactive object Select Hidden In RegiserObject Component 
+- If You Want Deactive object OOn Start Game Select Hidden In RegiserObject Component 

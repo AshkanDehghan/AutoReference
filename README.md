@@ -2,11 +2,11 @@
 Simple Auto Reference Objects In Unity Without Drag And Drop OR Find . 
 
 ## Usage
--1 Add Release Unity Package To Your Project
+- 1 Add Release Unity Package To Your Project
 
--2 Add RegisterObject Component To Your Object
+- 2 Add RegisterObject Component To Your Object
 
--3 Get Object With obj.Get("objectname");
+- 3 Get Object With obj.Get("objectname");
 
 - Or Get A component of GameObject like Button With  obj.GetB("objectname");
   

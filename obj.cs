@@ -1,8 +1,6 @@
-using RTLTMPro;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public static class obj 
 {
@@ -11,52 +9,18 @@ public static class obj
 
     public static GameObject Get(string name) {
 
-        return map[name];
+        map.TryGetValue(name, out var obj);
+        return obj;
     }
-    public static Button GetB(string name)
+    public static T Get<T>(string name) where T : Component
     {
+        if(map.TryGetValue(name, out var obj))
+        return obj.GetComponent<T>();
 
-        return map[name].GetComponent<Button>();
+
+        return null;
     }
-    public static Image GetI(string name)
-    {
-
-        return map[name].GetComponent<Image>();
-    }
-    public static RTLTextMeshPro GetRTL(string name)
-    {
-
-        return map[name].GetComponent<RTLTextMeshPro>();
-    }
-    public static TMP_InputField GetIN(string name)
-    {
-
-        return map[name].GetComponent<TMP_InputField>();
-    }
-    public static TMP_Text GetT(string name)
-    {
-
-        return map[name].GetComponent<TMP_Text>();
-    }
-    public static Slider GetS(string name)
-    {
-
-        return map[name].GetComponent<Slider>();
-    }
-
-    public static AudioSource GetAU(string name)
-    {
-
-        return map[name].GetComponent<AudioSource>();
-    }
-
-
-
-
-
-
-
-
+ 
 
     public static void Set(GameObject ob) { 
     

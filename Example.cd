@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Example : MonoBehaviour
 {
@@ -13,11 +14,11 @@ public class Example : MonoBehaviour
         /// Game Object
         obj.Get("myObject");
         /// Component Of A Game Object
-        obj.GetI("myObject"); // Image
-        obj.GetB("myObject"); // Button
-        obj.GetIN("myObject"); // Input Field
+        obj.Get<Image>("myObject"); // Image
+        obj.Get<Button>("myObject"); // Button
+        ...
 
-        // U Can Add Or Change This MeThos On "obj" Script
+      
     }
 }
   

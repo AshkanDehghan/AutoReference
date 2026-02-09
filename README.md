@@ -7,9 +7,9 @@ Simple Auto Service Locator For Reference Objects In Unity Without Drag And Drop
 - 2 Add RegisterObject Component To Your Object
 - 
 ## Usage
-- Get Object With obj.Get("objectname");
+- Get Object With "obj.Get("objectname");"
 
-- Get A component of Object obj.Get<Image>("objectname");
+- Get A component of Object "obj.Get<Image>("objectname");"
 
 ## Note
 - Object Must Be Active
